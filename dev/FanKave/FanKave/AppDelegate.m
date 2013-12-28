@@ -7,12 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "DeviceUtils.h"
+#import "DataUtils.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // Console header
+    NSLog(@"- - - - - - - -");
+    NSLog(@" FanKave");
+    NSLog(@"- - - - - - - -");
+    NSLog(@" ");
+    
+    
+    // initialize app singletons
+    [DeviceUtils sharedDeviceUtils];
+    [DataUtils sharedDataUtils];
+    
+    
     return YES;
 }
 							

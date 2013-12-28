@@ -22,6 +22,18 @@
 		E2FFDBAF186F6BFF00479A8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FFDB8E186F6BFF00479A8F /* UIKit.framework */; };
 		E2FFDBB7186F6BFF00479A8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBB5186F6BFF00479A8F /* InfoPlist.strings */; };
 		E2FFDBB9186F6BFF00479A8F /* FanKaveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFDBB8186F6BFF00479A8F /* FanKaveTests.m */; };
+		E2FFDBC9186F6F5500479A8F /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBC7186F6F5500479A8F /* Default-568h@2x~iphone.png */; };
+		E2FFDBCA186F6F5500479A8F /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBC8186F6F5500479A8F /* Default@2x~iphone.png */; };
+		E2FFDBD0186F725200479A8F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFDBCF186F725200479A8F /* RootViewController.m */; };
+		E2FFDBD5186F741700479A8F /* DeviceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFDBD4186F741700479A8F /* DeviceUtils.m */; };
+		E2FFDBDA186F764D00479A8F /* RootMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFDBD9186F764D00479A8F /* RootMenuView.m */; };
+		E2FFDBDD186F76B000479A8F /* RootMenuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBDC186F76B000479A8F /* RootMenuData.plist */; };
+		E2FFDBE1186F776B00479A8F /* DataUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFDBE0186F776B00479A8F /* DataUtils.m */; };
+		E2FFDBE5186F800F00479A8F /* menuItemFriends@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBE3186F800F00479A8F /* menuItemFriends@2x~iphone.png */; };
+		E2FFDBE6186F800F00479A8F /* menuItemNews@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBE4186F800F00479A8F /* menuItemNews@2x~iphone.png */; };
+		E2FFDBE8186F81FF00479A8F /* menuItemKaves@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBE7186F81FF00479A8F /* menuItemKaves@2x~iphone.png */; };
+		E2FFDBEA186F82D500479A8F /* menuItemGames@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBE9186F82D500479A8F /* menuItemGames@2x~iphone.png */; };
+		E2FFDBEC186F838900479A8F /* menuItemMore@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBEB186F838900479A8F /* menuItemMore@2x~iphone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +67,22 @@
 		E2FFDBB4186F6BFF00479A8F /* FanKaveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FanKaveTests-Info.plist"; sourceTree = "<group>"; };
 		E2FFDBB6186F6BFF00479A8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E2FFDBB8186F6BFF00479A8F /* FanKaveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanKaveTests.m; sourceTree = "<group>"; };
+		E2FFDBC7186F6F5500479A8F /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		E2FFDBC8186F6F5500479A8F /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
+		E2FFDBCE186F725200479A8F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Classes/ViewControllers/RootViewController/RootViewController.h; sourceTree = "<group>"; };
+		E2FFDBCF186F725200479A8F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Classes/ViewControllers/RootViewController/RootViewController.m; sourceTree = "<group>"; };
+		E2FFDBD3186F741700479A8F /* DeviceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtils.h; sourceTree = "<group>"; };
+		E2FFDBD4186F741700479A8F /* DeviceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtils.m; sourceTree = "<group>"; };
+		E2FFDBD8186F764D00479A8F /* RootMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootMenuView.h; path = Classes/Views/RootMenuView/RootMenuView.h; sourceTree = "<group>"; };
+		E2FFDBD9186F764D00479A8F /* RootMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootMenuView.m; path = Classes/Views/RootMenuView/RootMenuView.m; sourceTree = "<group>"; };
+		E2FFDBDC186F76B000479A8F /* RootMenuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = RootMenuData.plist; path = data/RootMenuData.plist; sourceTree = "<group>"; };
+		E2FFDBDF186F776B00479A8F /* DataUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataUtils.h; path = DataUtils/DataUtils.h; sourceTree = "<group>"; };
+		E2FFDBE0186F776B00479A8F /* DataUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataUtils.m; path = DataUtils/DataUtils.m; sourceTree = "<group>"; };
+		E2FFDBE3186F800F00479A8F /* menuItemFriends@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuItemFriends@2x~iphone.png"; sourceTree = "<group>"; };
+		E2FFDBE4186F800F00479A8F /* menuItemNews@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuItemNews@2x~iphone.png"; sourceTree = "<group>"; };
+		E2FFDBE7186F81FF00479A8F /* menuItemKaves@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuItemKaves@2x~iphone.png"; sourceTree = "<group>"; };
+		E2FFDBE9186F82D500479A8F /* menuItemGames@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuItemGames@2x~iphone.png"; sourceTree = "<group>"; };
+		E2FFDBEB186F838900479A8F /* menuItemMore@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuItemMore@2x~iphone.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +142,8 @@
 		E2FFDB90186F6BFF00479A8F /* FanKave */ = {
 			isa = PBXGroup;
 			children = (
+				E2FFDBCB186F708800479A8F /* Classes */,
+				E2FFDBC3186F6F5500479A8F /* Resources */,
 				E2FFDB99186F6BFF00479A8F /* AppDelegate.h */,
 				E2FFDB9A186F6BFF00479A8F /* AppDelegate.m */,
 				E2FFDB9C186F6BFF00479A8F /* Main_iPhone.storyboard */,
@@ -153,6 +183,133 @@
 				E2FFDBB5186F6BFF00479A8F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2FFDBC3186F6F5500479A8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBDB186F769700479A8F /* data */,
+				E2FFDBC4186F6F5500479A8F /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E2FFDBC4186F6F5500479A8F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBE2186F800F00479A8F /* mainMenu */,
+				E2FFDBC5186F6F5500479A8F /* app */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E2FFDBC5186F6F5500479A8F /* app */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBC6186F6F5500479A8F /* default */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		E2FFDBC6186F6F5500479A8F /* default */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBC7186F6F5500479A8F /* Default-568h@2x~iphone.png */,
+				E2FFDBC8186F6F5500479A8F /* Default@2x~iphone.png */,
+			);
+			path = default;
+			sourceTree = "<group>";
+		};
+		E2FFDBCB186F708800479A8F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBD6186F761B00479A8F /* Views */,
+				E2FFDBD1186F741700479A8F /* utils */,
+				E2FFDBCC186F708B00479A8F /* ViewControllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E2FFDBCC186F708B00479A8F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBCD186F709000479A8F /* RootViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E2FFDBCD186F709000479A8F /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBCE186F725200479A8F /* RootViewController.h */,
+				E2FFDBCF186F725200479A8F /* RootViewController.m */,
+			);
+			name = RootViewController;
+			sourceTree = "<group>";
+		};
+		E2FFDBD1186F741700479A8F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBDE186F775400479A8F /* DataUtils */,
+				E2FFDBD2186F741700479A8F /* DeviceUtils */,
+			);
+			name = utils;
+			path = Classes/utils;
+			sourceTree = "<group>";
+		};
+		E2FFDBD2186F741700479A8F /* DeviceUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBD3186F741700479A8F /* DeviceUtils.h */,
+				E2FFDBD4186F741700479A8F /* DeviceUtils.m */,
+			);
+			path = DeviceUtils;
+			sourceTree = "<group>";
+		};
+		E2FFDBD6186F761B00479A8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBD7186F762000479A8F /* RootMenuView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E2FFDBD7186F762000479A8F /* RootMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBD8186F764D00479A8F /* RootMenuView.h */,
+				E2FFDBD9186F764D00479A8F /* RootMenuView.m */,
+			);
+			name = RootMenuView;
+			sourceTree = "<group>";
+		};
+		E2FFDBDB186F769700479A8F /* data */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBDC186F76B000479A8F /* RootMenuData.plist */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		E2FFDBDE186F775400479A8F /* DataUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBDF186F776B00479A8F /* DataUtils.h */,
+				E2FFDBE0186F776B00479A8F /* DataUtils.m */,
+			);
+			name = DataUtils;
+			sourceTree = "<group>";
+		};
+		E2FFDBE2186F800F00479A8F /* mainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBEB186F838900479A8F /* menuItemMore@2x~iphone.png */,
+				E2FFDBE3186F800F00479A8F /* menuItemFriends@2x~iphone.png */,
+				E2FFDBE9186F82D500479A8F /* menuItemGames@2x~iphone.png */,
+				E2FFDBE7186F81FF00479A8F /* menuItemKaves@2x~iphone.png */,
+				E2FFDBE4186F800F00479A8F /* menuItemNews@2x~iphone.png */,
+			);
+			path = mainMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +388,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FFDBCA186F6F5500479A8F /* Default@2x~iphone.png in Resources */,
+				E2FFDBEA186F82D500479A8F /* menuItemGames@2x~iphone.png in Resources */,
 				E2FFDBA1186F6BFF00479A8F /* Main_iPad.storyboard in Resources */,
+				E2FFDBEC186F838900479A8F /* menuItemMore@2x~iphone.png in Resources */,
+				E2FFDBE6186F800F00479A8F /* menuItemNews@2x~iphone.png in Resources */,
+				E2FFDBE5186F800F00479A8F /* menuItemFriends@2x~iphone.png in Resources */,
+				E2FFDBC9186F6F5500479A8F /* Default-568h@2x~iphone.png in Resources */,
+				E2FFDBE8186F81FF00479A8F /* menuItemKaves@2x~iphone.png in Resources */,
 				E2FFDBA6186F6BFF00479A8F /* Images.xcassets in Resources */,
 				E2FFDB9E186F6BFF00479A8F /* Main_iPhone.storyboard in Resources */,
+				E2FFDBDD186F76B000479A8F /* RootMenuData.plist in Resources */,
 				E2FFDB95186F6BFF00479A8F /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,7 +419,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2FFDBA4186F6BFF00479A8F /* ViewController.m in Sources */,
+				E2FFDBE1186F776B00479A8F /* DataUtils.m in Sources */,
+				E2FFDBD5186F741700479A8F /* DeviceUtils.m in Sources */,
 				E2FFDB9B186F6BFF00479A8F /* AppDelegate.m in Sources */,
+				E2FFDBDA186F764D00479A8F /* RootMenuView.m in Sources */,
+				E2FFDBD0186F725200479A8F /* RootViewController.m in Sources */,
 				E2FFDB97186F6BFF00479A8F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

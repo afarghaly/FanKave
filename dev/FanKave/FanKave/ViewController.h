@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class RootViewController;
+
+
 
 @interface ViewController : UIViewController
+
+@property (nonatomic, strong) RootViewController *rootViewController;
 
 @end
