@@ -8,6 +8,25 @@
 
 #import <UIKit/UIKit.h>
 
+
+
+@protocol RootMenuViewDelegate
+
+- (void)newsTapped;
+- (void)friendsTapped;
+- (void)kavesTapped;
+- (void)gamesTapped;
+- (void)moreTapped;
+
+@end
+
+
+
 @interface RootMenuView : UIView
+
+@property (nonatomic, assign) id <RootMenuViewDelegate> delegate;
+
+- (void)preset:(uint)sectionID_;
+
 
 @end

@@ -22,11 +22,12 @@
     NSLog(@"- - - - - - - -");
     NSLog(@" ");
     
-    
     // initialize app singletons
     [DeviceUtils sharedDeviceUtils];
     [DataUtils sharedDataUtils];
     
+    // global appearance settings
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     return YES;
 }

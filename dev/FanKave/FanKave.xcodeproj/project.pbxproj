@@ -34,6 +34,11 @@
 		E2FFDBE8186F81FF00479A8F /* menuItemKaves@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBE7186F81FF00479A8F /* menuItemKaves@2x~iphone.png */; };
 		E2FFDBEA186F82D500479A8F /* menuItemGames@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBE9186F82D500479A8F /* menuItemGames@2x~iphone.png */; };
 		E2FFDBEC186F838900479A8F /* menuItemMore@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2FFDBEB186F838900479A8F /* menuItemMore@2x~iphone.png */; };
+		E2FFDBF0186F8BAC00479A8F /* FanKaveBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFDBEF186F8BAC00479A8F /* FanKaveBaseViewController.m */; };
+		E2FFDBF4186F8BE900479A8F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFDBF3186F8BE900479A8F /* NewsViewController.m */; };
+		E2FFDBF8186F8C0800479A8F /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFDBF7186F8C0800479A8F /* FriendsViewController.m */; };
+		E2FFDBFC186F8C2500479A8F /* KavesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFDBFB186F8C2500479A8F /* KavesViewController.m */; };
+		E2FFDC00186F8C3C00479A8F /* GamesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FFDBFF186F8C3C00479A8F /* GamesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +88,16 @@
 		E2FFDBE7186F81FF00479A8F /* menuItemKaves@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuItemKaves@2x~iphone.png"; sourceTree = "<group>"; };
 		E2FFDBE9186F82D500479A8F /* menuItemGames@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuItemGames@2x~iphone.png"; sourceTree = "<group>"; };
 		E2FFDBEB186F838900479A8F /* menuItemMore@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuItemMore@2x~iphone.png"; sourceTree = "<group>"; };
+		E2FFDBEE186F8BAC00479A8F /* FanKaveBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FanKaveBaseViewController.h; path = Classes/ViewControllers/FanKaveBaseViewController/FanKaveBaseViewController.h; sourceTree = "<group>"; };
+		E2FFDBEF186F8BAC00479A8F /* FanKaveBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FanKaveBaseViewController.m; path = Classes/ViewControllers/FanKaveBaseViewController/FanKaveBaseViewController.m; sourceTree = "<group>"; };
+		E2FFDBF2186F8BE900479A8F /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsViewController.h; path = Classes/ViewControllers/NewsViewController/NewsViewController.h; sourceTree = "<group>"; };
+		E2FFDBF3186F8BE900479A8F /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsViewController.m; path = Classes/ViewControllers/NewsViewController/NewsViewController.m; sourceTree = "<group>"; };
+		E2FFDBF6186F8C0800479A8F /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendsViewController.h; path = Classes/ViewControllers/FriendsViewController/FriendsViewController.h; sourceTree = "<group>"; };
+		E2FFDBF7186F8C0800479A8F /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendsViewController.m; path = Classes/ViewControllers/FriendsViewController/FriendsViewController.m; sourceTree = "<group>"; };
+		E2FFDBFA186F8C2500479A8F /* KavesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KavesViewController.h; path = Classes/ViewControllers/KavesViewController/KavesViewController.h; sourceTree = "<group>"; };
+		E2FFDBFB186F8C2500479A8F /* KavesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KavesViewController.m; path = Classes/ViewControllers/KavesViewController/KavesViewController.m; sourceTree = "<group>"; };
+		E2FFDBFE186F8C3C00479A8F /* GamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamesViewController.h; path = Classes/ViewControllers/GamesViewController/GamesViewController.h; sourceTree = "<group>"; };
+		E2FFDBFF186F8C3C00479A8F /* GamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamesViewController.m; path = Classes/ViewControllers/GamesViewController/GamesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +248,11 @@
 		E2FFDBCC186F708B00479A8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E2FFDBFD186F8C2A00479A8F /* GamesViewController */,
+				E2FFDBF9186F8C0C00479A8F /* KavesViewController */,
+				E2FFDBF5186F8BEF00479A8F /* FriendsViewController */,
+				E2FFDBF1186F8BCE00479A8F /* NewsViewController */,
+				E2FFDBED186F8B4600479A8F /* FanKaveBaseViewController */,
 				E2FFDBCD186F709000479A8F /* RootViewController */,
 			);
 			name = ViewControllers;
@@ -310,6 +330,51 @@
 				E2FFDBE4186F800F00479A8F /* menuItemNews@2x~iphone.png */,
 			);
 			path = mainMenu;
+			sourceTree = "<group>";
+		};
+		E2FFDBED186F8B4600479A8F /* FanKaveBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBEE186F8BAC00479A8F /* FanKaveBaseViewController.h */,
+				E2FFDBEF186F8BAC00479A8F /* FanKaveBaseViewController.m */,
+			);
+			name = FanKaveBaseViewController;
+			sourceTree = "<group>";
+		};
+		E2FFDBF1186F8BCE00479A8F /* NewsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBF2186F8BE900479A8F /* NewsViewController.h */,
+				E2FFDBF3186F8BE900479A8F /* NewsViewController.m */,
+			);
+			name = NewsViewController;
+			sourceTree = "<group>";
+		};
+		E2FFDBF5186F8BEF00479A8F /* FriendsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBF6186F8C0800479A8F /* FriendsViewController.h */,
+				E2FFDBF7186F8C0800479A8F /* FriendsViewController.m */,
+			);
+			name = FriendsViewController;
+			sourceTree = "<group>";
+		};
+		E2FFDBF9186F8C0C00479A8F /* KavesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBFA186F8C2500479A8F /* KavesViewController.h */,
+				E2FFDBFB186F8C2500479A8F /* KavesViewController.m */,
+			);
+			name = KavesViewController;
+			sourceTree = "<group>";
+		};
+		E2FFDBFD186F8C2A00479A8F /* GamesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2FFDBFE186F8C3C00479A8F /* GamesViewController.h */,
+				E2FFDBFF186F8C3C00479A8F /* GamesViewController.m */,
+			);
+			name = GamesViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,11 +483,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FFDBF8186F8C0800479A8F /* FriendsViewController.m in Sources */,
 				E2FFDBA4186F6BFF00479A8F /* ViewController.m in Sources */,
 				E2FFDBE1186F776B00479A8F /* DataUtils.m in Sources */,
+				E2FFDBFC186F8C2500479A8F /* KavesViewController.m in Sources */,
+				E2FFDC00186F8C3C00479A8F /* GamesViewController.m in Sources */,
 				E2FFDBD5186F741700479A8F /* DeviceUtils.m in Sources */,
 				E2FFDB9B186F6BFF00479A8F /* AppDelegate.m in Sources */,
+				E2FFDBF0186F8BAC00479A8F /* FanKaveBaseViewController.m in Sources */,
 				E2FFDBDA186F764D00479A8F /* RootMenuView.m in Sources */,
+				E2FFDBF4186F8BE900479A8F /* NewsViewController.m in Sources */,
 				E2FFDBD0186F725200479A8F /* RootViewController.m in Sources */,
 				E2FFDB97186F6BFF00479A8F /* main.m in Sources */,
 			);

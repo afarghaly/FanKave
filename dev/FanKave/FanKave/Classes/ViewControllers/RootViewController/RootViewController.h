@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "RootMenuView.h"
 
-@interface RootViewController : UIViewController
+
+@interface RootViewController : UIViewController <RootMenuViewDelegate>
 
 @end
