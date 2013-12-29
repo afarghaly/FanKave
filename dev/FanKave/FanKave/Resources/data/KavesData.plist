@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>kaveName</key>
+		<string>49ers champs!</string>
+		<key>leftTeam</key>
+		<dict>
+			<key>teamName</key>
+			<string>Chargers</string>
+			<key>teamImage</key>
+			<string>chargers</string>
+			<key>teamScore</key>
+			<string>35</string>
+		</dict>
+		<key>rightTeam</key>
+		<dict>
+			<key>teamName</key>
+			<string>49ers</string>
+			<key>teamImage</key>
+			<string>fortyniners</string>
+			<key>teamScore</key>
+			<string>41</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>kaveName</key>
+		<string>US Open Final</string>
+		<key>leftTeam</key>
+		<dict>
+			<key>teamName</key>
+			<string>Novak Djokovic</string>
+			<key>teamImage</key>
+			<string>djokovic</string>
+			<key>teamScore</key>
+			<string>4</string>
+		</dict>
+		<key>rightTeam</key>
+		<dict>
+			<key>teamName</key>
+			<string>Rafael Nadal</string>
+			<key>teamImage</key>
+			<string>nadal</string>
+			<key>teamScore</key>
+			<string>5</string>
+		</dict>
+	</dict>
+	<dict>
+		<key>kaveName</key>
+		<string>US vs Brazil</string>
+		<key>leftTeam</key>
+		<dict>
+			<key>teamName</key>
+			<string>US</string>
+			<key>teamImage</key>
+			<string>us</string>
+			<key>teamScore</key>
+			<string>1</string>
+		</dict>
+		<key>rightTeam</key>
+		<dict>
+			<key>teamName</key>
+			<string>Brazil</string>
+			<key>teamImage</key>
+			<string>brazil</string>
+			<key>teamScore</key>
+			<string>3</string>
+		</dict>
+	</dict>
+</array>
+</plist>

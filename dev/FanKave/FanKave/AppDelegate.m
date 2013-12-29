@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DeviceUtils.h"
 #import "DataUtils.h"
+#import "ColorUtils.h"
 
 @implementation AppDelegate
 
@@ -25,6 +26,7 @@
     // initialize app singletons
     [DeviceUtils sharedDeviceUtils];
     [DataUtils sharedDataUtils];
+    [ColorUtils sharedColorUtils];
     
     // global appearance settings
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];

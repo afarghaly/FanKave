@@ -37,14 +37,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    // app bkgd image
     UIImageView *bkgdImageView = [[UIImageView alloc] initWithFrame:self.view.frame];
     bkgdImageView.image = [UIImage imageNamed:@"Default"];
     [self.view addSubview:bkgdImageView];
     
-    NSLog(@"[ViewController viewDidLoad: %@", self.view);
-    
+    // root view controller
     self.rootViewController = [[RootViewController alloc] init];
-//    [self addChildViewController:self.rootViewController];
     [self.view addSubview:self.rootViewController.view];
 }
 

@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DeviceUtils.h"
+#import "DataUtils.h"
+
 
 @interface FanKaveBaseViewController : UIViewController
 {
     UILabel *titleLabel;
+    NSMutableArray *viewComponents;
 }
 @end

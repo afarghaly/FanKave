@@ -31,10 +31,13 @@
     FriendsViewController *friends;
     KavesViewController *kaves;
     GamesViewController *games;
+    
+    NSMutableArray *mainViews;
 }
 
 - (void)scrollToSection:(uint)sectionID_;
 - (void)snapToSection:(uint)sectionID_;
+
 @end
 
 
@@ -73,34 +76,42 @@
     
     NSLog(@"[RootViewCOntroller viewDidLoad]");
     
-    contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height - 48)];
+    self.view.exclusiveTouch = NO;
+    
+    
+    contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height - 50)];
+    contentView.exclusiveTouch = NO;
+    contentView.userInteractionEnabled = YES;
     [self.view addSubview:contentView];
+    
     
     menuView = [[RootMenuView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 48, 320, 47)];
     menuView.delegate = self;
     [self.view addSubview:menuView];
     
+    
     // load sections (all are loaded at once, but manage their resources manually for performance)
     news = [[NewsViewController alloc] init];
-    [contentView addSubview:news.view];
+//    [contentView addSubview:news.view];
     
     friends = [[FriendsViewController alloc] init];
-    [contentView addSubview:friends.view];
-    CGRect friendsFrame = friends.view.frame;
-    friendsFrame.origin.x = 320;
-    friends.view.frame = friendsFrame;
+//    [contentView addSubview:friends.view];
+//    CGRect friendsFrame = friends.view.frame;
+//    friendsFrame.origin.x = 320;
+//    friends.view.frame = friendsFrame;
     
     kaves = [[KavesViewController alloc] init];
-    [contentView addSubview:kaves.view];
-    CGRect kavesFrame = kaves.view.frame;
-    kavesFrame.origin.x = 640;
-    kaves.view.frame = kavesFrame;
+//    [self addChildViewController:kaves];
+//    [contentView addSubview:kaves.view];
+//    CGRect kavesFrame = kaves.view.frame;
+//    kavesFrame.origin.x = 640;
+//    kaves.view.frame = kavesFrame;
     
     games = [[GamesViewController alloc] init];
-    [contentView addSubview:games.view];
-    CGRect gamesFrame = games.view.frame;
-    gamesFrame.origin.x = 960;
-    games.view.frame = gamesFrame;
+//    [contentView addSubview:games.view];
+//    CGRect gamesFrame = games.view.frame;
+//    gamesFrame.origin.x = 960;
+//    games.view.frame = gamesFrame;
     
     [self snapToSection:2];
     [menuView preset:2];    // load Kaves by default for now
@@ -149,14 +160,21 @@
 
 - (void)moreTapped
 {
-    NSLog(@"more");
+//    NSLog(@"more");
 }
 
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+#pragma mark -
+#pragma mark navigation animation
 
 
 - (void)scrollToSection:(uint)sectionID_
 {
-    [UIView animateWithDuration:0.45
+    /*
+    [UIView animateWithDuration:0.2
                      animations:^{
                          CGRect contentFrame = contentView.frame;
                          contentFrame.origin.x = -(sectionID_ * 320.0f);
@@ -166,15 +184,70 @@
     {
         
     }];
+    */
+    
+    for(UIView *view in [contentView subviews])
+    {
+        [view removeFromSuperview];
+    }
+    
+    switch(sectionID_)
+    {
+        case 0:
+            [contentView addSubview:news.view];
+            break;
+            
+        case 1:
+            [contentView addSubview:friends.view];
+            break;
+            
+        case 2:
+            [contentView addSubview:kaves.view];
+            break;
+            
+        case 3:
+            [contentView addSubview:games.view];
+            break;
+            
+        case 4:
+            
+            break;
+    }
 }
 
 - (void)snapToSection:(uint)sectionID_
 {
-    CGRect contentFrame = contentView.frame;
-    contentFrame.origin.x = -(sectionID_ * 320.0f);
-    contentView.frame = contentFrame;
+    for(UIView *view in [contentView subviews])
+    {
+        [view removeFromSuperview];
+    }
+    
+    switch(sectionID_)
+    {
+        case 0:
+            [contentView addSubview:news.view];
+            break;
+            
+        case 1:
+            [contentView addSubview:friends.view];
+            break;
+            
+        case 2:
+            [contentView addSubview:kaves.view];
+            break;
+            
+        case 3:
+            [contentView addSubview:games.view];
+            break;
+            
+        case 4:
+            
+            break;
+    }
 }
 
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 

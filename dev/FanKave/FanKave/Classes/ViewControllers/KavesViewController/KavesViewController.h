@@ -7,7 +7,10 @@
 //
 
 #import "FanKaveBaseViewController.h"
+#import "KaveSelectionView.h"
+#import "KaveControlView.h"
+#import "KaveDetailsView.h"
 
-@interface KavesViewController : FanKaveBaseViewController
+@interface KavesViewController : FanKaveBaseViewController <KaveSelectionViewDelegate, KaveControlViewDelegate, UIScrollViewDelegate>
 
 @end

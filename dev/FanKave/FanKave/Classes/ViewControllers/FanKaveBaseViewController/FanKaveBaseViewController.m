@@ -21,6 +21,8 @@
     if (self)
     {
         // Custom initialization
+//        NSLog(@"FanKaveBaseController init");
+        viewComponents = [NSMutableArray arrayWithCapacity:5];
     }
     
     return self;
@@ -31,7 +33,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-//    self.view.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.1f];
+    UIView *bkgd = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 300, self.view.frame.size.height - 58)];
+//    bkgd.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.2f];
+    [self.view addSubview:bkgd];
     
     titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 100, 200, 60)];
     titleLabel.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.0f];
