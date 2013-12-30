@@ -10,7 +10,7 @@
 #import "KaveScoreView.h"
 
 
-@interface KaveDetailsView : UIView
+@interface KaveDetailsView : UIView <UIScrollViewDelegate>
 
 - (void)initializeWithKaveData:(NSDictionary *)kaveData_;
 - (void)selectMenuItemWithID:(uint)buttonID_;

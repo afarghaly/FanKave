@@ -100,10 +100,10 @@
     NSString *chatEntry = chatEntryData[@"chatEntry"];
     NSLog(@"chat Entry: %@", chatEntry);
     
-    CGSize textBubbleSize = [chatEntry sizeWithFont:[UIFont fontWithName:@"helveticaNeue" size:12] constrainedToSize:CGSizeMake(180, 10000) lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize textBubbleSize = [chatEntry sizeWithFont:[UIFont fontWithName:@"helveticaNeue" size:12] constrainedToSize:CGSizeMake(150, 10000) lineBreakMode:NSLineBreakByWordWrapping];
     NSLog(@"textBubbleSize: %f", textBubbleSize.height);
     
-    return textBubbleSize.height + 20;
+    return textBubbleSize.height + 25;
 }
 
 

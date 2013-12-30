@@ -46,13 +46,20 @@
 //        chatOwnerImageView.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.1f];
         chatOwnerImageView.image = [UIImage imageNamed:chatEntryOwnerImage];
         [self.contentView addSubview:chatOwnerImageView];
+        CALayer *chatOwnerImageViewLayer = chatOwnerImageView.layer;
+        chatOwnerImageViewLayer.cornerRadius = 5.0f;
+        chatOwnerImageViewLayer.masksToBounds = YES;
         
         UIView *chatEntryBkgd = [[UIView alloc] initWithFrame:CGRectZero];
         chatEntryBkgd.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.8f];
         [self.contentView addSubview:chatEntryBkgd];
+        CALayer *bkgdLayer = chatEntryBkgd.layer;
+        bkgdLayer.cornerRadius = 5.0f;
+        bkgdLayer.masksToBounds = YES;
+        
         
         NSString *chatEntry = chatData_[@"chatEntry"];
-        chatEntryLabel = [[UILabel alloc] initWithFrame:CGRectMake((direction == ChatEntryLeft ? 40 : 65), 10, 180, 20)];
+        chatEntryLabel = [[UILabel alloc] initWithFrame:CGRectMake((direction == ChatEntryLeft ? 45 : 90), 10, 150, 20)];
 //        chatEntryLabel.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.3f];
         chatEntryLabel.textAlignment = (direction == ChatEntryLeft ? NSTextAlignmentLeft : NSTextAlignmentRight);
         chatEntryLabel.text = chatEntry;
@@ -60,8 +67,7 @@
         chatEntryLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
         [self.contentView addSubview:chatEntryLabel];
         
-        CGSize bubbleSize = [chatEntry sizeWithFont:chatEntryLabel.font constrainedToSize:CGSizeMake(180, 1000) lineBreakMode:NSLineBreakByWordWrapping];
-//        NSLog(@"chat bubble size: %@", NSStringFromCGSize(bubbleSize));
+        CGSize bubbleSize = [chatEntry sizeWithFont:chatEntryLabel.font constrainedToSize:CGSizeMake(chatEntryLabel.frame.size.width, 1000) lineBreakMode:NSLineBreakByWordWrapping];
         
         CGRect chatEntryLabelFrame = chatEntryLabel.frame;
         chatEntryLabelFrame.size.height = bubbleSize.height;
@@ -73,8 +79,6 @@
         chatEntryBkgdFrame.size.width = chatEntryLabelFrame.size.width + 10;
         chatEntryBkgdFrame.size.height = chatEntryLabelFrame.size.height + 10;
         chatEntryBkgd.frame = chatEntryBkgdFrame;
-        
-//        self.textLabel.text = chatData_[@"chatEntryOwnerImage"];
     }
     return self;
 }

@@ -9,7 +9,13 @@
 #import "KaveDetailsView.h"
 #import "DataUtils.h"
 #import "ColorUtils.h"
+
+// content view controllers
 #import "KaveChatTableViewController.h"
+#import "KaveSocialTableViewController.h"
+#import "KavePlaysTableViewController.h"
+#import "KaveNewsTableViewController.h"
+
 
 
 @interface KaveDetailsView()
@@ -21,6 +27,9 @@
     UIImageView *kaveContentIndicator;
     
     KaveChatTableViewController *kaveChat;
+    KaveSocialTableViewController *kaveSocial;
+    KavePlaysTableViewController *kavePlays;
+    KaveNewsTableViewController *kaveNews;
 }
 @end
 
@@ -84,6 +93,7 @@
 //        kaveContentScrollView.scrollEnabled = NO;
         kaveContentScrollView.contentSize = CGSizeMake(4 * 284.5, frame.size.height - 114);
         kaveContentScrollView.pagingEnabled = YES;
+        kaveContentScrollView.delegate = self;
         [self addSubview:kaveContentScrollView];
         
         
@@ -94,6 +104,38 @@
         kaveChatFrame.size.width = 284;
         kaveChatFrame.size.height = frame.size.height - 114;
         kaveChat.view.frame = kaveChatFrame;
+        
+        
+        kaveSocial = [[KaveSocialTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        [kaveContentScrollView addSubview:kaveSocial.view];
+        CGRect kaveSocialFrame = kaveSocial.view.frame;
+        kaveSocialFrame.origin.x = 284;
+        kaveSocialFrame.origin.y = 0;
+        kaveSocialFrame.size.width = 284;
+        kaveSocialFrame.size.height = frame.size.height - 114;
+        kaveSocial.view.frame = kaveSocialFrame;
+        
+        
+        kavePlays = [[KavePlaysTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        [kaveContentScrollView addSubview:kavePlays.view];
+        CGRect kavePlaysFrame = kavePlays.view.frame;
+        kavePlaysFrame.origin.x = 284 * 2;
+        kavePlaysFrame.origin.y = 0;
+        kavePlaysFrame.size.width = 284;
+        kavePlaysFrame.size.height = frame.size.height - 114;
+        kavePlays.view.frame = kavePlaysFrame;
+        
+        
+        kaveNews = [[KaveNewsTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        [kaveContentScrollView addSubview:kaveNews.view];
+        CGRect kaveNewsFrame = kaveNews.view.frame;
+        kaveNewsFrame.origin.x = 284 * 3;
+        kaveNewsFrame.origin.y = 0;
+        kaveNewsFrame.size.width = 284;
+        kaveNewsFrame.size.height = frame.size.height - 114;
+        kaveNews.view.frame = kaveNewsFrame;
+        
+        
         
 //        NSLog(@"kave chat frame: %@", NSStringFromCGRect(kaveChatFrame));
         
@@ -150,6 +192,8 @@
      {
          
      }];
+    
+    [kaveContentScrollView scrollRectToVisible:CGRectMake(menuItemButton.tag * kaveContentScrollView.frame.size.width, 0, kaveContentScrollView.frame.size.width, 1) animated:YES];
 }
 
 
@@ -159,6 +203,22 @@
     [self menuItemButtonTapped:button];
 }
 
+
+#pragma mark -
+#pragma mark UIScrollViewDelegate methods
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSLog(@"done scrolling");
+    
+    CGPoint kaveContentScrollViewContentOffset = kaveContentScrollView.contentOffset;
+    float buttonIndex = kaveContentScrollViewContentOffset.x / kaveContentScrollView.frame.size.width;
+    NSLog(@"button index: %d", (uint)buttonIndex);
+//    [kaveSelection selectButtonAtIndex:(uint)buttonIndex];
+    
+    UIButton *button = kaveDetailsTabButtons[(uint)buttonIndex];
+    [self menuItemButtonTapped:button];
+}
 
 
 
