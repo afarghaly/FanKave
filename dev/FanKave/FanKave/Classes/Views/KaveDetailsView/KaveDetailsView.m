@@ -9,6 +9,8 @@
 #import "KaveDetailsView.h"
 #import "DataUtils.h"
 #import "ColorUtils.h"
+#import "KaveChatTableViewController.h"
+
 
 @interface KaveDetailsView()
 {
@@ -17,6 +19,8 @@
     UIScrollView *kaveContentScrollView;
     
     UIImageView *kaveContentIndicator;
+    
+    KaveChatTableViewController *kaveChat;
 }
 @end
 
@@ -65,10 +69,9 @@
         }
         
         
-        UIImageView *kaveContentBkgdImageView = [[UIImageView alloc] initWithFrame:CGRectMake(8, 93, 304.5, frame.size.height - 114)];
+        UIImageView *kaveContentBkgdImageView = [[UIImageView alloc] initWithFrame:CGRectMake(8, 93, 304.5, frame.size.height - 94)];
         
         kaveContentBkgdImageView.image = [[UIImage imageNamed:@"kaveDetailsContentBkgd"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 0, 10, 0)  resizingMode:UIImageResizingModeStretch];
-//        kaveContentBkgdImageView.image = [UIImage imageNamed:@"kaveDetailsContentBkgd"];
         [self addSubview:kaveContentBkgdImageView];
         
         
@@ -76,10 +79,23 @@
         kaveContentIndicator.image = [UIImage imageNamed:@"kaveDetailsContentIndicator"];
         [self addSubview:kaveContentIndicator];
         
-//        kaveContentScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-//        kaveContentScrollView.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.2f];
-//        [self addSubview:kaveContentScrollView];
+        kaveContentScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(18, 102, 284.5, frame.size.height - 114)];
+        kaveContentScrollView.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.1f];
+//        kaveContentScrollView.scrollEnabled = NO;
+        kaveContentScrollView.contentSize = CGSizeMake(4 * 284.5, frame.size.height - 114);
+        kaveContentScrollView.pagingEnabled = YES;
+        [self addSubview:kaveContentScrollView];
         
+        
+        kaveChat = [[KaveChatTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        [kaveContentScrollView addSubview:kaveChat.view];
+        CGRect kaveChatFrame = kaveChat.view.frame;
+        kaveChatFrame.origin.y = 0;
+        kaveChatFrame.size.width = 284;
+        kaveChatFrame.size.height = frame.size.height - 114;
+        kaveChat.view.frame = kaveChatFrame;
+        
+//        NSLog(@"kave chat frame: %@", NSStringFromCGRect(kaveChatFrame));
         
     }
     return self;
@@ -90,12 +106,12 @@
 {
 //    NSLog(@"initialze KaveDetails with data: %@", kaveData_);
     [scoreView initializeWithKaveData:kaveData_];
+    [kaveChat initializeWithKaveData:kaveData_];
 }
 
 
 - (void)menuItemButtonTapped:(id)sender
 {
-    NSLog(@"kave details content menu item button tapped");
     UIButton *menuItemButton = (UIButton *)sender;
     
     switch(menuItemButton.tag)

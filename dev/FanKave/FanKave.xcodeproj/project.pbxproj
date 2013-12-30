@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2E707AC1870F3CF00537972 /* KaveContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E707AB1870F3CF00537972 /* KaveContentTableViewController.m */; };
+		E2E707B01870F40B00537972 /* KaveChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E707AF1870F40B00537972 /* KaveChatTableViewController.m */; };
+		E2E707B41870F80100537972 /* KaveChatEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E707B31870F80100537972 /* KaveChatEntryCell.m */; };
+		E2E707B81870FE6600537972 /* michael@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E707B51870FE6600537972 /* michael@2x~iphone.png */; };
+		E2E707B91870FE6600537972 /* hanna@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E707B61870FE6600537972 /* hanna@2x~iphone.png */; };
+		E2E707BA1870FE6600537972 /* ahmed@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E707B71870FE6600537972 /* ahmed@2x~iphone.png */; };
 		E2EF44301870B895007C8913 /* KaveScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EF442F1870B895007C8913 /* KaveScoreView.m */; };
 		E2EF44341870B968007C8913 /* KaveDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EF44331870B968007C8913 /* KaveDetailsView.m */; };
 		E2EF44361870BBF9007C8913 /* KavesData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2EF44351870BBF9007C8913 /* KavesData.plist */; };
@@ -82,6 +88,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2E707AA1870F3CF00537972 /* KaveContentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KaveContentTableViewController.h; path = Classes/ViewControllers/KaveContentTableViewController/KaveContentTableViewController.h; sourceTree = "<group>"; };
+		E2E707AB1870F3CF00537972 /* KaveContentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KaveContentTableViewController.m; path = Classes/ViewControllers/KaveContentTableViewController/KaveContentTableViewController.m; sourceTree = "<group>"; };
+		E2E707AE1870F40B00537972 /* KaveChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KaveChatTableViewController.h; path = Classes/ViewControllers/KaveContentTableViewController/KaveChatTableViewController/KaveChatTableViewController.h; sourceTree = "<group>"; };
+		E2E707AF1870F40B00537972 /* KaveChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KaveChatTableViewController.m; path = Classes/ViewControllers/KaveContentTableViewController/KaveChatTableViewController/KaveChatTableViewController.m; sourceTree = "<group>"; };
+		E2E707B21870F80100537972 /* KaveChatEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KaveChatEntryCell.h; path = Classes/Views/KaveChatEntryCell/KaveChatEntryCell.h; sourceTree = "<group>"; };
+		E2E707B31870F80100537972 /* KaveChatEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KaveChatEntryCell.m; path = Classes/Views/KaveChatEntryCell/KaveChatEntryCell.m; sourceTree = "<group>"; };
+		E2E707B51870FE6600537972 /* michael@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "michael@2x~iphone.png"; sourceTree = "<group>"; };
+		E2E707B61870FE6600537972 /* hanna@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hanna@2x~iphone.png"; sourceTree = "<group>"; };
+		E2E707B71870FE6600537972 /* ahmed@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ahmed@2x~iphone.png"; sourceTree = "<group>"; };
 		E2EF442E1870B895007C8913 /* KaveScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KaveScoreView.h; path = Classes/Views/KaveScoreView/KaveScoreView.h; sourceTree = "<group>"; };
 		E2EF442F1870B895007C8913 /* KaveScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KaveScoreView.m; path = Classes/Views/KaveScoreView/KaveScoreView.m; sourceTree = "<group>"; };
 		E2EF44321870B968007C8913 /* KaveDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KaveDetailsView.h; path = Classes/Views/KaveDetailsView/KaveDetailsView.h; sourceTree = "<group>"; };
@@ -190,6 +205,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2E707A91870F39000537972 /* KaveContentTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2E707AD1870F3E200537972 /* KaveChatTableViewController */,
+				E2E707AA1870F3CF00537972 /* KaveContentTableViewController.h */,
+				E2E707AB1870F3CF00537972 /* KaveContentTableViewController.m */,
+			);
+			name = KaveContentTableViewController;
+			sourceTree = "<group>";
+		};
+		E2E707AD1870F3E200537972 /* KaveChatTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2E707AE1870F40B00537972 /* KaveChatTableViewController.h */,
+				E2E707AF1870F40B00537972 /* KaveChatTableViewController.m */,
+			);
+			name = KaveChatTableViewController;
+			sourceTree = "<group>";
+		};
+		E2E707B11870F7C300537972 /* KaveChatEntryCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2E707B21870F80100537972 /* KaveChatEntryCell.h */,
+				E2E707B31870F80100537972 /* KaveChatEntryCell.m */,
+			);
+			name = KaveChatEntryCell;
+			sourceTree = "<group>";
+		};
 		E2EF442A1870B81A007C8913 /* KaveScoreView */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +264,9 @@
 		E2EF44491870CD71007C8913 /* KaveDetails */ = {
 			isa = PBXGroup;
 			children = (
+				E2E707B51870FE6600537972 /* michael@2x~iphone.png */,
+				E2E707B61870FE6600537972 /* hanna@2x~iphone.png */,
+				E2E707B71870FE6600537972 /* ahmed@2x~iphone.png */,
 				E2EF44561870DF5E007C8913 /* kaveDetailsMenuItemChat_selected@2x~iphone.png */,
 				E2EF44571870DF5E007C8913 /* kaveDetailsMenuItemNews_selected@2x~iphone.png */,
 				E2EF44581870DF5E007C8913 /* kaveDetailsMenuItemPlays_selected@2x~iphone.png */,
@@ -407,6 +453,7 @@
 		E2FFDBCC186F708B00479A8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E2E707A91870F39000537972 /* KaveContentTableViewController */,
 				E2FFDBFD186F8C2A00479A8F /* GamesViewController */,
 				E2FFDBF9186F8C0C00479A8F /* KavesViewController */,
 				E2FFDBF5186F8BEF00479A8F /* FriendsViewController */,
@@ -449,6 +496,7 @@
 		E2FFDBD6186F761B00479A8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E2E707B11870F7C300537972 /* KaveChatEntryCell */,
 				E2EF44311870B951007C8913 /* KaveDetailsView */,
 				E2EF442A1870B81A007C8913 /* KaveScoreView */,
 				E2F76ACF186FB70A00D8A823 /* KaveControlView */,
@@ -621,10 +669,12 @@
 			files = (
 				E2EF445C1870DF5F007C8913 /* kaveDetailsMenuItemPlays_selected@2x~iphone.png in Resources */,
 				E2EF445B1870DF5F007C8913 /* kaveDetailsMenuItemNews_selected@2x~iphone.png in Resources */,
+				E2E707B81870FE6600537972 /* michael@2x~iphone.png in Resources */,
 				E2FFDBCA186F6F5500479A8F /* Default@2x~iphone.png in Resources */,
 				E2FFDBEA186F82D500479A8F /* menuItemGames@2x~iphone.png in Resources */,
 				E2F76ACE186FB25C00D8A823 /* kaveSelectionIndicator@2x~iphone.png in Resources */,
 				E2FFDBA1186F6BFF00479A8F /* Main_iPad.storyboard in Resources */,
+				E2E707B91870FE6600537972 /* hanna@2x~iphone.png in Resources */,
 				E2FFDBEC186F838900479A8F /* menuItemMore@2x~iphone.png in Resources */,
 				E2F76ADA186FBAF700D8A823 /* kaveMicButton@2x~iphone.png in Resources */,
 				E2EF44461870C7CF007C8913 /* nadal@2x~iphone.png in Resources */,
@@ -644,6 +694,7 @@
 				E2EF44451870C7CF007C8913 /* djokovic@2x~iphone.png in Resources */,
 				E2EF443E1870C675007C8913 /* chargers@2x~iphone.png in Resources */,
 				E2F76AD8186FBA4200D8A823 /* kaveSettingsButton@2x~iphone.png in Resources */,
+				E2E707BA1870FE6600537972 /* ahmed@2x~iphone.png in Resources */,
 				E2F76AD4186FB8FD00D8A823 /* friendRequestsButton@2x~iphone.png in Resources */,
 				E2FFDBE8186F81FF00479A8F /* menuItemKaves@2x~iphone.png in Resources */,
 				E2EF443D1870C675007C8913 /* fortyniners@2x~iphone.png in Resources */,
@@ -679,6 +730,8 @@
 				E2FFDBE1186F776B00479A8F /* DataUtils.m in Sources */,
 				E2FFDBFC186F8C2500479A8F /* KavesViewController.m in Sources */,
 				E2EF44341870B968007C8913 /* KaveDetailsView.m in Sources */,
+				E2E707B41870F80100537972 /* KaveChatEntryCell.m in Sources */,
+				E2E707AC1870F3CF00537972 /* KaveContentTableViewController.m in Sources */,
 				E2FFDC00186F8C3C00479A8F /* GamesViewController.m in Sources */,
 				E2FFDBD5186F741700479A8F /* DeviceUtils.m in Sources */,
 				E2EF443A1870C0B1007C8913 /* KaveTeamView.m in Sources */,
@@ -686,6 +739,7 @@
 				E2EF44301870B895007C8913 /* KaveScoreView.m in Sources */,
 				E2F76AC5186FA06000D8A823 /* KaveSelectionView.m in Sources */,
 				E2FFDBF0186F8BAC00479A8F /* FanKaveBaseViewController.m in Sources */,
+				E2E707B01870F40B00537972 /* KaveChatTableViewController.m in Sources */,
 				E2F76AC9186FA18100D8A823 /* ColorUtils.m in Sources */,
 				E2FFDBDA186F764D00479A8F /* RootMenuView.m in Sources */,
 				E2FFDBF4186F8BE900479A8F /* NewsViewController.m in Sources */,

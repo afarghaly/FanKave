@@ -23,6 +23,65 @@
 			<key>teamScore</key>
 			<string>41</string>
 		</dict>
+		<key>kaveChatStream</key>
+		<array>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>michael</string>
+				<key>chatEntry</key>
+				<string>Go 49ers!</string>
+				<key>chatTimestamp</key>
+				<string>12:05 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>ahmed</string>
+				<key>chatEntry</key>
+				<string>No way, go Chargers!</string>
+				<key>chatTimestamp</key>
+				<string>12:08 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>hanna</string>
+				<key>chatEntry</key>
+				<string>I didn&apos;t know you were a Chargers fan!</string>
+				<key>chatTimestamp</key>
+				<string>12:09 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>ahmed</string>
+				<key>chatEntry</key>
+				<string>I&apos;m not, but their cheerleaders are super-cute :P</string>
+				<key>chatTimestamp</key>
+				<string>12:12 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>michael</string>
+				<key>chatEntry</key>
+				<string>They are fine</string>
+				<key>chatTimestamp</key>
+				<string>12:15 AM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>ahmed</string>
+				<key>chatEntry</key>
+				<string>Indeed</string>
+				<key>chatTimestamp</key>
+				<string>12:16 AM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>michael</string>
+				<key>chatEntry</key>
+				<string>Fo sho!</string>
+				<key>chatTimestamp</key>
+				<string>12:16 PM</string>
+			</dict>
+		</array>
 	</dict>
 	<dict>
 		<key>kaveName</key>
@@ -45,6 +104,65 @@
 			<key>teamScore</key>
 			<string>5</string>
 		</dict>
+		<key>kaveChatStream</key>
+		<array>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>ahmed</string>
+				<key>chatEntry</key>
+				<string>This match is so EPIC!</string>
+				<key>chatTimestamp</key>
+				<string>12:05 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>michael</string>
+				<key>chatEntry</key>
+				<string>Dude, Nadal&apos;s gonna get his ass kicked</string>
+				<key>chatTimestamp</key>
+				<string>12:08 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>hanna</string>
+				<key>chatEntry</key>
+				<string>Did you see that last serve? 120MPH!</string>
+				<key>chatTimestamp</key>
+				<string>12:09 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>ahmed</string>
+				<key>chatEntry</key>
+				<string>@Michael, I&apos;m not so sure, he&apos;s the King of Clay!</string>
+				<key>chatTimestamp</key>
+				<string>12:12 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>hanna</string>
+				<key>chatEntry</key>
+				<string>But this isn&apos;t on clay, it&apos;s the US Open :$</string>
+				<key>chatTimestamp</key>
+				<string>12:15 AM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>ahmed</string>
+				<key>chatEntry</key>
+				<string>D&apos;oh!</string>
+				<key>chatTimestamp</key>
+				<string>12:16 AM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>michael</string>
+				<key>chatEntry</key>
+				<string>LOL</string>
+				<key>chatTimestamp</key>
+				<string>12:16 PM</string>
+			</dict>
+		</array>
 	</dict>
 	<dict>
 		<key>kaveName</key>
@@ -67,6 +185,65 @@
 			<key>teamScore</key>
 			<string>3</string>
 		</dict>
+		<key>kaveChatStream</key>
+		<array>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>hanna</string>
+				<key>chatEntry</key>
+				<string>These Brazilians are so quick!</string>
+				<key>chatTimestamp</key>
+				<string>12:05 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>michael</string>
+				<key>chatEntry</key>
+				<string>Man, the US is getting their asses kicked</string>
+				<key>chatTimestamp</key>
+				<string>12:08 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>hanna</string>
+				<key>chatEntry</key>
+				<string>I bet the Americans can find a way!</string>
+				<key>chatTimestamp</key>
+				<string>12:09 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>michael</string>
+				<key>chatEntry</key>
+				<string>I&apos;ll take that bet, you&apos;re on!</string>
+				<key>chatTimestamp</key>
+				<string>12:12 PM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>ahmed</string>
+				<key>chatEntry</key>
+				<string>I&apos;ll get in on that action, count me in</string>
+				<key>chatTimestamp</key>
+				<string>12:15 AM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>hanna</string>
+				<key>chatEntry</key>
+				<string>Uh-oh</string>
+				<key>chatTimestamp</key>
+				<string>12:16 AM</string>
+			</dict>
+			<dict>
+				<key>chatEntryOwnerImage</key>
+				<string>hanna</string>
+				<key>chatEntry</key>
+				<string>What did I get myself in to!</string>
+				<key>chatTimestamp</key>
+				<string>12:16 PM</string>
+			</dict>
+		</array>
 	</dict>
 </array>
 </plist>

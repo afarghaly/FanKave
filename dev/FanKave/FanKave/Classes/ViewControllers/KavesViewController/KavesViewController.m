@@ -69,13 +69,14 @@
     kaveScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 84, 320, self.view.frame.size.height - 100)];
     [self.view addSubview:kaveScrollView];
 //    kaveScrollView.userInteractionEnabled = NO;
+    kaveScrollView.showsHorizontalScrollIndicator = NO;
     kaveScrollView.pagingEnabled = YES;
     kaveScrollView.delegate = self;
     kaveScrollView.contentSize = CGSizeMake(960, 300);
     
     for(int i = 0 ; i < 3 ; i++)
     {
-        KaveDetailsView *kaveDetails = [[KaveDetailsView alloc] initWithFrame:CGRectMake(i * 320, 0, 318, self.view.frame.size.height - 100)];
+        KaveDetailsView *kaveDetails = [[KaveDetailsView alloc] initWithFrame:CGRectMake(i * 320, 0, 318, self.view.frame.size.height - 130)];
         [kaveScrollView addSubview:kaveDetails];
         [kaveDetails initializeWithKaveData:kavesData[i]];
         [kaveDetails selectMenuItemWithID:0];
